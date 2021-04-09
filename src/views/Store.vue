@@ -146,12 +146,12 @@ export default {
         });
     },
     mounted(){
-        axios.get('http://127.0.0.1:8000/api/products').then(response =>{
+        axios.get('https://unnatural.fr/api/products').then(response =>{
             for(let product in response.data){
                 this.products.push(response.data[product]);
             }
         });
-        axios.get('http://127.0.0.1:8000/api/posts/').then(response =>{
+        axios.get('https://unnatural.fr/api/posts/').then(response =>{
             for(let post in response.data){
                 this.posts.push(response.data[post]);
             }
@@ -163,7 +163,7 @@ export default {
             this.elem = product;
         },
         submitPost(elem, user){
-            axios.post('http://127.0.0.1:8000/api/posts',{
+            axios.post('https://unnatural.fr/api/posts',{
                 content: this.newComment,
                 user_id: user.id,
                 product_id: elem.id,

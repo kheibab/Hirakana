@@ -25,7 +25,7 @@ export default {
     },
     data() {
     return {
-        url: "http://127.0.0.1:8000/api/users",
+        url: "https://unnatural.fr/api/users",
         customers: [],
         form: {name: '', email: '', password: '', isEdit: false},
         loader: false
