@@ -3,7 +3,7 @@ import Home from "../views/Home.vue";
 import Login from "../views/Login.vue";
 import Register from "../views/Register.vue";
 import Dashboard from "../views/Dashboard.vue";
-import CategoriesTable from "../components/CrudCategoriesTable.vue";
+import CrudUser from "../views/CrudUser.vue";
 import Store from "../views/Store.vue";
 import Cart from "../views/Cart.vue";
 
@@ -16,9 +16,9 @@ const routes = [
     component: Home
   },
   {
-    path: "/categories",
-    name: "CategoriesTable",
-    component: CategoriesTable
+    path: "/cruduser",
+    name: "CrudUser",
+    component: CrudUser
   },
   {
     path: "/cart",

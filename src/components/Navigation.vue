@@ -19,6 +19,8 @@
           <router-link v-if="!isLoggedIn" class="nav-item nav-link" :to="{ name: 'Register' }" >Register</router-link>
           <router-link v-if="isLoggedIn" class="nav-item nav-link" :to="{ name: 'Store' }" >Shop</router-link>
           <router-link v-if="isLoggedIn" class="nav-item nav-link" :to="{ name: 'Dashboard' }" >Dashboard</router-link>
+          <router-link v-if="isLoggedIn" class="nav-item nav-link" :to="{ name: 'CrudUser' }" >Admin User</router-link>
+          <router-link v-if="isLoggedIn" class="nav-item nav-link" :to="{ name: 'CrudUser' }" >Admin User</router-link>
           <router-link class="nav-item nav-link" v-if="isLoggedIn" :to="{ name: 'Cart' }"><img src="../assets/Shopping_cart_icon.png" width="40" height="40"></router-link>
         </ul>
       </div>
